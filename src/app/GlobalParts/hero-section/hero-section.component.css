@@ -1,0 +1,34 @@
+.main{
+    background-color: var(--black);
+    color: var(--white);
+}
+.tag .label{
+    background-color: var(--green);
+}
+.tag .label i{
+    font-size: 20px;
+}
+.tag .label{
+    font-weight: 300;
+}
+.tag .label .text{
+    font-size: 12px;
+}
+ .title h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+
+.tag button{
+    background-color: var(--light-black);
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+}
+.left{
+    width: 35%;
+}
+.right{
+    width: 65%;
+}

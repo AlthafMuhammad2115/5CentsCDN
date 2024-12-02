@@ -1,0 +1,9 @@
+.main{
+    border-left: 3px solid var(--green);
+    border-top: 0.2px solid #C8C8C8;
+    border-bottom: .2px solid #C8C8C8;
+}
+.main p{
+    font-size: 12px;
+    line-height: 15px;
+}

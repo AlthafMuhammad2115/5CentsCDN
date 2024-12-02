@@ -1,0 +1,124 @@
+<!-- edge rules title starts -->
+<div class="main col-12 d-flex justify-content-between px-3 py-3 rounded">
+  <div class="title d-flex col-8 align-items-center">
+    <button class="btn p-2 rounded">
+      <img src="../../../assets/icons/zone/edge-zone.svg" alt="" width="30" />
+    </button>
+    <h3 class="ps-2">Edge Rules</h3>
+  </div>
+  <div class="menu d-flex justify-content-evenly col-4">
+    <p
+      class="px-2"
+      routerLink="/zone/edgerules/criteria"
+      [routerLinkActive]="'is_active'"
+    >
+      Rules
+    </p>
+    <div class="line"></div>
+    <p class="px-2 exep">Default Behaviours</p>
+    <div class="line"></div>
+    <p class="px-2">Error Logs</p>
+  </div>
+</div>
+<!-- edge rules title ends -->
+
+
+<div class="rules row gx-3 col-12 my-2">
+
+  <!-- active rules portion starts -->
+  <div class="left col-2">
+    <div class="col-12 d-flex flex-column">
+      <div class="active_rules py-3 px-1 rounded mb-2">
+        <h1 class="text-center h3 mx-2 mb-4">Active Rules</h1>
+        <div
+          class="ps-3 py-2 d-flex align-items-center"
+          *ngFor="let item of list; index as i"
+        >
+          <input type="radio" name="option" value="i" [checked]="i === 0"/>
+          <label class="ps-1" for="">{{ item }}</label>
+        </div>
+      </div>
+
+      <div class="create rounded py-2 px-2">
+        <h1 class="h4 text-center">Create Criteria</h1>
+        <div class="button d-flex justify-content-between px-4 pt-1">
+          <button
+            class="btn1 border-0"
+            style="background-color: var(--green); color: white"
+          >
+            ADD
+          </button>
+          <button
+            class="btn2 border-0"
+            style="background-color: var(--red); color: white"
+          >
+            DELETE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- active rules portion ends -->
+
+
+  <!-- rules and criteria start -->
+  <div class="col-10 rules_desc d-flex flex-column px-5 py-4 rounded">
+    <div class="input col-12 d-flex align-items-center">
+      <div class="input d-flex col-12 align-items-center">
+        <p class="h5 col-1 mx-0">Rule Name</p>
+        <input type="text" class="form-control mx-3" />
+        <button class="inputbtn border-0 rounded p-2 px-2 col-1">Save</button>
+      </div>
+    </div>
+
+    <!-- criteria container starts -->
+    <div
+      class="criteria_desc col-12 mx-auto d-flex flex-column py-4 my-4 px-3 rounded"
+    >
+      <div
+        class="head d-flex justify-content-between col-12 px-5 py-2 align-items-center"
+      >
+        <div class="name">
+          <h1 class="h4">Criteria</h1>
+        </div>
+        <div class="button d-flex">
+          <button class="btns1 rounded  border-0 me-2" (click)="onclick()">
+            <img src="../../../assets/icons/zone/add.svg" alt="" />
+          </button>
+          <button class="btns2 rounded  border-0">
+            <img src="../../../assets/icons/zone/arrows.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="filter col-12 d-flex justify-content-between p-3 rounded mt-3"
+      >
+        <div class="filter_name d-flex align-items-center ps-3">
+          <p class="m-0 fw-bold">IF</p>
+
+          <input type="radio" class="ms-3" name="choose"/>
+          <label for="">Any</label>
+          <input type="radio" class="ms-3" name="choose"  />
+          <label for="">All</label>
+        </div>
+        <div class="">
+          <button class="deletebtns rounded px-3 py-1">DELETE</button>
+        </div>
+      </div>
+
+      <!-- each criteria  box starts-->
+      <div class="ip my-2">
+        <div *ngFor="let item of criteria, index as i">
+          <app-criteria [number]="i+1" [index]="i"></app-criteria>
+        </div>
+      </div>
+      <!-- each criteria  box ends-->
+
+    </div>
+    <!-- criteria container ends -->
+
+  </div>
+  <!-- rules and ends start -->
+
+</div>

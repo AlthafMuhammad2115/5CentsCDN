@@ -1,0 +1,50 @@
+<div class="container-fluid main col-12 d-flex rounded py-5 px-4">
+  <div class="left d-flex flex-column">
+    <div class="tag d-flex justify-content-start pb-3">
+      <button class="rounded-circle border">
+        <i class="bi bi-arrow-left"></i>
+      </button>
+      <div class="label rounded ms-3 p-2 d-flex align-items-center">
+        <div><i class="bi bi-info-circle pe-2"></i></div>
+        <div class="text">Enterprise + Plan: Next Renewal on Feb 2nd 2023</div>
+      </div>
+    </div>
+    <div class="title ">
+        <ng-content select="[line]"></ng-content>
+      <h1 class="head">
+        {{text}}
+      </h1>
+    </div>
+    <ng-content select="[button]"></ng-content>
+  </div>
+
+  <div class="right d-flex justify-content-center align-items-center mx-0">
+    <div class="row g-2">
+      <app-inner-hero-section
+        class="col-6"
+        name="Image Compressed"
+        network="1482/1M"
+      ></app-inner-hero-section>
+      <app-inner-hero-section
+        class="col-6"
+        name="Web Application Firewall Rules"
+        network="30 Active"
+      ></app-inner-hero-section>
+      <app-inner-hero-section
+        class="col-4"
+        name="Bandwidth Usage"
+        network="140TB/200TB"
+      ></app-inner-hero-section>
+      <app-inner-hero-section
+        class="col-4"
+        name="Disk"
+        network="450.61GB used"
+      ></app-inner-hero-section>
+      <app-inner-hero-section
+        class="col-4"
+        name="Image Optimized"
+        network="543/1M"
+      ></app-inner-hero-section>
+    </div>
+  </div>
+</div>

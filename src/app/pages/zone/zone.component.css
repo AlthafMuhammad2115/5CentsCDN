@@ -1,0 +1,39 @@
+.main{
+    background-color: var(--light-white);
+}
+
+/* hero section */
+.line{
+    height: .5rem;
+    width: 60px;
+    background-color: var(--no-green);
+}
+.inner_line{
+    background-color: var(--green);
+    height: .5rem;
+    width: 60%;
+}
+
+
+.button span{
+    font-weight: 300;
+}
+
+/* zone section starts */
+
+.title{
+    border-bottom: 1px solid #E1E1E1
+}
+.zone_info{
+    background-color: var(--white);
+}
+
+app-button{
+    width: fit-content !important;
+    padding: 0px;
+}
+
+.is_active{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

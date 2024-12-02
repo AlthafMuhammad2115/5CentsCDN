@@ -1,0 +1,114 @@
+<div class="col-12 main py-5">
+  <div class="col-11 mx-auto">
+    <div class="hero_section">
+      <!-- hero  section starts -->
+      <app-hero-section text="Pull Zone - 1574">
+        <div line class="line position-relative rounded-pill my-2 mt-4">
+          <div
+            class="inner_line position-absolute top-0 left-0 rounded-pill"
+          ></div>
+        </div>
+        <div button class="d-flex justify-content-between col-9 mt-3 button">
+          <div class="d-flex align-items-center">
+            <app-hero-btn
+              imgUrl="../../../assets/icons/hero/brush.svg"
+              width="30"
+            ></app-hero-btn>
+            <span class="ms-2">Purge cache</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <app-hero-btn
+              imgUrl="../../../assets/icons/hero/graph.svg"
+              width="40"
+            ></app-hero-btn>
+            <span class="ms-2">Statistics</span>
+          </div>
+        </div>
+      </app-hero-section>
+    </div>
+
+    <!-- hero section end -->
+
+    <!-- zone options starts -->
+    <div class="zone_info d-flex flex-column my-5 py-4 px-5 rounded">
+      <div class="col-12 title">
+        <p class="h4">Zone Information</p>
+      </div>
+      <div class="row justify-content-between pt-4">
+        <app-button
+          imgUrl="../../../assets/icons/zone/grop.svg"
+          role="button"
+          class="mx-1"
+          name="Cdn Resource"
+        ></app-button>
+        <app-button
+          imgUrl="../../../assets/icons/zone/tool.svg"
+          role="button"
+          class="mx-1"
+          name="Integration"
+        ></app-button>
+        <app-button
+          imgUrl="../../../assets/icons/zone/ip.svg"
+          role="button"
+          class="mx-1"
+          name="Origin Ip"
+        ></app-button>
+        <app-button
+          imgUrl="../../../assets/icons/zone/graph.svg"
+          role="button"
+          class="mx-1"
+          name="Edge Settings"
+        ></app-button>
+        <app-button
+          imgUrl="../../../assets/icons/zone/shield.svg"
+          role="button"
+          class="mx-1"
+          name="Origin Shield"
+        ></app-button>
+        <app-button
+          imgUrl="../../../assets/icons/zone/spanner.svg"
+          role="button"
+          class="mx-1"
+          name="Manage Cache"
+        ></app-button>
+        <app-button
+          imgUrl="../../../assets/icons/zone/shield.svg"
+          role="button"
+          class="mx-1"
+          name="Edge Rules"
+          route="/zone/edgerules/criteria"
+        ></app-button>
+        <app-button
+          imgUrl="../../../assets/icons/zone/spanner.svg"
+          role="button"
+          class="mx-1"
+          name="Statistics"
+        ></app-button>
+        <app-button
+          imgUrl="../../../assets/icons/zone/ip.svg"
+          role="button"
+          class="mx-1"
+          name="Gen Block"
+        ></app-button>
+        <app-button
+          imgUrl="../../../assets/icons/zone/graph.svg"
+          role="button"
+          class="mx-1"
+          name="Secue Token"
+        ></app-button>
+        <app-button
+          imgUrl="../../../assets/icons/zone/geoblack.svg"
+          role="button"
+          class="mx-1"
+          name="API Protection"
+        ></app-button>
+      </div>
+    </div>
+    <!-- zone options ends -->
+
+    <!-- routing components -->
+    <router-outlet></router-outlet>
+    <!-- routing components -->
+
+  </div>
+</div>

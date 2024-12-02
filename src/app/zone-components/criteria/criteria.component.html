@@ -1,0 +1,36 @@
+<div class="main col-12 rounded row py-4 px-2 mx-auto my-2">
+  <div class="head d-flex justify-content-between col-12 pb-2">
+    <h1 class="h5 pt-2">Criteria {{number}}</h1>
+    <div class="button d-flex">
+      <button class="btn1 border-0 rounded me-2" (click)="delete()">
+        <img src="../../../assets/icons/zone/delete.svg" alt="" width="20" />
+      </button>
+      <button class="btn2 border-0 rounded">
+        <img src="../../../assets/icons/zone/arrows.svg" alt="" width="15" />
+      </button>
+    </div>
+  </div>
+
+  <div class="input col-10 d-flex py-4">
+    <select name="Client IP" class="me-3 rounded py-3 pe-3">
+      <option>Client IP</option>
+
+    </select>
+    <select name="cars" class="me-3 rounded py-3 pe-3">
+      <option>Is one of</option>
+    </select>
+    <div class="d-flex align-items-center ">
+      <input type="checkbox"  />
+      <p class="ms-1 m-0">Consider X Forwarded for IP</p>
+    </div>
+  </div>
+  <div class="col-8 pb-4 text_input">
+    <input type="text" class="form-control py-3" (keyup.enter)="onEnter()" [(ngModel)]="value" placeholder="Select Items"/>
+  </div>
+  <div class="ips d-flex col-8 flex-wrap " >
+    <button class="ipbtn btn d-flex align-items-center m-2" *ngFor="let item of btnIPList,index as i">
+      {{item}}
+      <img src="../../../assets/icons/zone/close.svg" alt="" width="13" class="py-1 ms-3 delet_btn_img" (click)="deleteip(i)" />
+    </button>
+  </div>
+</div>

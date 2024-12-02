@@ -1,0 +1,132 @@
+<div class="col-12 main py-5">
+  <div class="col-11 mx-auto">
+
+    <!-- hero section starts -->
+    <app-hero-section text="Deliver Assets Faster and Securely" class="my-3">
+      <div button class="ctn_btn pt-3">
+        <button class="rounded btn">Buy Addon's</button>
+      </div>
+    </app-hero-section>
+    <!-- hero section ends -->
+
+    <!-- dashboard detials starts -->
+    <div class="row g-2 col-12 pt-4">
+
+      <div class="left col-2 d-flex flex-column">
+      <!-- zones starts -->
+
+        <div class="zone mb-2 py-2 rounded">
+          <p class="text-center m-0 fw-bold pb-3">Zones</p>
+          <div class="d-flex justify-content-evenly">
+            <button
+              class="border-0 btn rounded d-flex justify-content-center align-items-center position-relative"
+            >
+              <img
+                src="../../../assets/icons/dashboard/http2.svg"
+                width="50"
+                class="ps-1 pt-1"
+              />
+              <div
+                class="position-absolute num top-0 start-100 translate-middle rounded-circle"
+              >
+                0
+              </div>
+            </button>
+            <button
+              class="border-0 btn rounded d-flex justify-content-center align-items-center position-relative"
+            >
+              <img
+                src="../../../assets/icons/dashboard/http2.svg"
+                width="50"
+                class="ps-1 pt-1"
+              />
+              <div
+                class="position-absolute num top-0 start-100 translate-middle rounded-circle"
+              >
+                1
+              </div>
+            </button>
+          </div>
+        </div>
+      <!-- zones ends -->
+
+      <!-- DNS starts -->
+
+        <div class="dns px-3 py-3 my-2 rounded">
+          <p class="fw-bold">DNS</p>
+          <p>Simple DNS</p>
+          <p>Traffic Detector</p>
+        </div>
+      <!-- DNS ends -->
+
+      </div>
+
+      <!-- middle portion starts -->
+      <div class="col-7 charts d-flex flex-column row">
+
+      <!-- Total Threats Blocked starts -->
+        <div class="line_main rounded py-3">
+          <div class="mb-2 rounded">
+            <div class="col-12 d-flex justify-content-between py-3">
+              <h1 class="h5">Total Threats Blocked</h1>
+              <span>7 days <i class="bi bi-chevron-compact-down"></i></span>
+            </div>
+          </div>
+
+          <!-- <div class="chart-container col-8 mx-auto rounded p-3 d-flex flex-column justify-content-center align-items-center">
+            <canvas id="lineChart" class="lineChart "></canvas>
+          </div> -->
+          <div class="position-relative">
+            <img src="../../../assets/icons/dashboard/linechart.svg" alt="" />
+            <img
+              src="../../../assets/icons/dashboard/Vector 2.svg"
+              alt=""
+              class="position-absolute start-0 line"
+            />
+
+            <div class="line_box position-relative position-absolute start-0 top-0 w-100 px-5 h-100">
+              <div class="lines position-absolute"></div>
+              <div class="lines position-absolute"></div>
+              <div class="lines position-absolute"></div>
+              <div class="lines position-absolute"></div>
+            </div>
+            
+          </div>
+        </div>
+      <!-- Total Threats Blocked ends -->
+
+      <!-- Traffic section starts -->
+        <div class="bar_grap rounded mt-3 px-4 py-4">
+          <h1 class="h6">Traffic</h1>
+          <img src="../../../assets/icons/dashboard/bar.svg" alt="" />
+        </div>
+      <!-- Traffic section ends -->
+
+      </div>
+      <!-- middle portion ends -->
+
+
+      <!-- right portion starts -->
+
+      <div class="col-3 news py-3 ps-3 rounded">
+        
+        <div class="d-flex justify-content-between">
+          <h1 class="h5">Recent Security Activity</h1>
+          <span><i class="bi bi-arrow-clockwise h4 me-3"></i></span>
+        </div>
+        <div class="new_det">
+          <app-notes></app-notes>
+          <app-notes></app-notes>
+          <app-notes></app-notes>
+          <app-notes></app-notes>
+          <app-notes></app-notes>
+        </div>
+      </div>
+    </div>
+
+      <!-- right portion ends -->
+
+    <!-- dashboard detials ends -->
+
+  </div>
+</div>

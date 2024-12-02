@@ -1,0 +1,22 @@
+.main{
+    background-color: var(--light-white);
+    width: 3rem;
+    height: 7rem;
+}
+.dot{
+    background-color: var(--green);
+    width: 15px;
+    height: 15px;
+}
+p{
+    font-weight: 400;
+    line-height: 1rem;
+}
+.main:hover{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.is_active{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

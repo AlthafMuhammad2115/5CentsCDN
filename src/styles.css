@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    font-family: "Roboto";
+}
+
+:root{
+    --black: #000000;
+    --green: #59A52C;
+    --red: #E31D1D;
+    --grey: #B2B6C6;
+    --light-black: #1C1C1C;
+    --light-white: #F4F5F7;
+    --white: #FFFFFF;
+    --no-green:#59A52C2B;
+    --light-green: #EEF6E9;
+    --border-color:#C2C2C2
+}
+
+.form-control:focus{
+    border-color: transparent;  /* Remove the default blue border */
+  box-shadow: none; 
+}

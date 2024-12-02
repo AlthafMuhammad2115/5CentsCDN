@@ -1,0 +1,47 @@
+.main{
+    background-color: var(--white);
+    border: 1px var(--border-color);
+}
+.main h1{
+    color: #626262;
+
+}
+
+.head .button .btn1{
+    background-color: var(--red);
+    width: 40px;
+    height: 40px;
+}
+.head .button .btn2{
+    background-color: #DDDDDD;
+    width: 40px;
+    height: 40px;
+}
+
+.head{
+    border-bottom: 1px #E1E1E1 solid;
+}
+
+.input select{
+    width: 200px;
+    border: .8px solid var(--border-color);
+}
+.text_input .form-control{
+    border: .8px solid var(--border-color) !important;
+
+}
+.text_input .form-control::placeholder{
+    color: var(--black);
+    font-weight: 400;
+
+}
+
+.ips .ipbtn{
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.delet_btn_img:hover{
+    transform: scale(1.1);
+    transition: .3ms ease all;
+}

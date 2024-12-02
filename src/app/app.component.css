@@ -1,0 +1,15 @@
+.router{
+    width: 93%;
+}
+.side_bar{
+    width: 7%;
+}
+app-sidebar{
+    height: fit-content !important;
+    position: sticky;
+    top: 0px;
+}
+/* .side_bar{
+    margin-top: 3rem;
+
+} */

@@ -1,0 +1,88 @@
+.main {
+    background-color: var(--light-white);
+}
+
+.ctn_btn button {
+    border: 2px solid var(--green);
+    color: var(--green);
+    background-color: transparent;
+    font-weight: 300;
+
+}
+
+.ctn_btn button:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+/* detial */
+
+.zone,
+.dns,
+.news,
+.bar_grap,
+.line_main {
+    background-color: var(--white);
+}
+
+.zone button {
+    height: 60px;
+    width: 60px;
+    background-color: var(--light-white);
+}
+
+.zone .num {
+    width: 20px;
+    /* height: 20px; */
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.dns {
+    height: 100%;
+}
+
+.news i {
+    color: var(--grey);
+}
+
+app-notes {
+    width: fit-content !important;
+    
+}
+
+.chart-container {
+    height: 200px;
+}
+.lineChart{
+    width: 100% !important;
+}
+.row,.row>*  {
+    margin: 0 ;
+}
+.line_main img{
+    width: 100%;
+}
+.line_main .line{
+    width: 100%;
+    top: 8px;
+} 
+
+
+.lines{
+    width:90%;
+    height: .07px;
+    background-color: #00000026;
+}
+.lines:nth-child(1){
+    top: 0% ;
+}
+.lines:nth-child(2){
+    top: 30% ;
+}
+.lines:nth-child(3){
+    top: 60%;
+}
+.lines:nth-child(4){
+    top: 90%;
+}

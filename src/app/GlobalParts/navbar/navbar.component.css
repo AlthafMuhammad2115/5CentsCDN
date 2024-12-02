@@ -1,0 +1,54 @@
+.main {
+    background-color: var(--black);
+}
+
+h1,
+p {
+    color: white;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.menu li {
+    cursor: pointer;
+    width: 8.5rem;
+}
+.menu li p{
+    width: max-content;
+}
+
+.menu li:hover {
+    background-color: var(--light-black);
+}
+.is_active{
+    background-color: var(--light-black);
+}
+
+.search-input {
+    background-color: var(--light-black);
+    border: none;
+}
+
+.search-input::placeholder {
+    color: #b3b3b3;
+    /* Light gray placeholder */
+}
+
+.deploy {
+    background-color: var(--green);
+}
+
+input:focus::placeholder {
+    color: transparent;
+    transition: ease-in 1ms;
+}
+input:focus + .search_icon {
+    width: 0px ;
+}
+input::placeholder{
+    padding-left: 20px;
+}
+.search img {
+    left: 10%;
+}

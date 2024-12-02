@@ -1,0 +1,18 @@
+.line{
+    height: .5rem;
+    width: 100%;
+    background-color: var(--no-green);
+}
+.main{
+    background-color: var(--light-black);
+}
+.innerline{
+    background-color: var(--green);
+    height: .5rem;
+    width: 40%;
+}
+.image_part span , .storage p{
+    font-weight: 300;
+    font-size: 13px
+
+}
